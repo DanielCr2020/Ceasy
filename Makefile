@@ -15,7 +15,7 @@ OBJS=$(SRC:.c=.o)
 
 all: $(TARGET)
 
-$(TARGET): $(OBJS) $(SRC) $(HDR)
+$(TARGET): $(OBJS) $(HDR)
 	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LDFLAGS)		
 	
 clean:
